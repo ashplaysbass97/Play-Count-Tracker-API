@@ -1,4 +1,4 @@
-﻿namespace DomainLayer.Models;
+﻿namespace Data.Models;
 
 public class AuthResult
 {

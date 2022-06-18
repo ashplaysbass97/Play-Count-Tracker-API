@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using PlayCountTrackerAPI;
 using PlayCountTrackerAPI.Routes;
-using RepositoryLayer;
+using Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 

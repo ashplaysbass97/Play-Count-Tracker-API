@@ -1,8 +1,8 @@
-﻿using DomainLayer.Models;
+﻿using Data.Models;
 using Microsoft.EntityFrameworkCore;
-using RepositoryLayer.Abstractions;
+using Repository.Abstractions;
 
-namespace RepositoryLayer.Repositories
+namespace Repository.Repositories
 {
     public class ArtistRepository<T> : IArtistRepository<T> where T : Artist
     {

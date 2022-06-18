@@ -1,8 +1,8 @@
-﻿using DomainLayer.Models;
+﻿using Data.Models;
 using Microsoft.AspNetCore.Identity;
-using ServiceLayer.Abstractions;
+using Service.Abstractions;
 
-namespace ServiceLayer.Services
+namespace Service.Services
 {
     public class AuthService : IAuthService
     {

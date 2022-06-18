@@ -1,5 +1,5 @@
-﻿using DomainLayer.Models;
-using ServiceLayer.Abstractions;
+﻿using Data.Models;
+using Service.Abstractions;
 namespace PlayCountTrackerAPI.Routes
 {
     public static class UserRoutes

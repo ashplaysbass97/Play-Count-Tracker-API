@@ -1,14 +1,14 @@
-﻿using DomainLayer.Models;
+﻿using Data.Models;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
-using RepositoryLayer;
-using RepositoryLayer.Abstractions;
-using RepositoryLayer.Repositories;
-using ServiceLayer.Abstractions;
-using ServiceLayer.Services;
+using Repository;
+using Repository.Abstractions;
+using Repository.Repositories;
+using Service.Abstractions;
+using Service.Services;
 using System.Text;
 
 namespace PlayCountTrackerAPI;

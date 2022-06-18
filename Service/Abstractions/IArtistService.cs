@@ -1,6 +1,6 @@
-﻿using DomainLayer.Models;
+﻿using Data.Models;
 
-namespace ServiceLayer.Abstractions
+namespace Service.Abstractions
 {
     public interface IArtistService
     {

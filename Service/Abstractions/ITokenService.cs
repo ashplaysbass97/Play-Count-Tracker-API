@@ -1,4 +1,4 @@
-﻿namespace ServiceLayer.Abstractions
+﻿namespace Service.Abstractions
 {
     public interface ITokenService
     {

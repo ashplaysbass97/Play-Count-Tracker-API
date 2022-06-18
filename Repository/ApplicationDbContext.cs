@@ -1,8 +1,8 @@
-﻿using DomainLayer.Models;
+﻿using Data.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace RepositoryLayer
+namespace Repository
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {

@@ -1,8 +1,8 @@
-﻿using DomainLayer.Models;
-using RepositoryLayer.Abstractions;
-using ServiceLayer.Abstractions;
+﻿using Data.Models;
+using Repository.Abstractions;
+using Service.Abstractions;
 
-namespace ServiceLayer.Services
+namespace Service.Services
 {
     public class ArtistService : IArtistService
     {

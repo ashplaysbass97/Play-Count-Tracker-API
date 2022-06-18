@@ -1,6 +1,6 @@
-﻿using DomainLayer.Models;
+﻿using Data.Models;
 
-namespace RepositoryLayer.Abstractions
+namespace Repository.Abstractions
 {
     public interface ITrackRepository<T> where T : Track
     {
