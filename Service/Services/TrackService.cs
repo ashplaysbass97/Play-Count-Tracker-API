@@ -6,9 +6,9 @@ namespace Service.Services
 {
     public class TrackService : ITrackService
     {
-        private readonly ITrackRepository<Track> _trackRepository;
+        private readonly IBaseRepository<Track> _trackRepository;
 
-        public TrackService(ITrackRepository<Track> trackRepository)
+        public TrackService(IBaseRepository<Track> trackRepository)
         {
             _trackRepository = trackRepository;
         }

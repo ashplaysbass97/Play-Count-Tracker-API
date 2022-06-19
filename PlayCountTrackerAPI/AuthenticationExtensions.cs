@@ -42,8 +42,7 @@ public static class AuthenticationExtensions
                 .Build();
         });
 
-        services.AddScoped(typeof(IArtistRepository<>), typeof(ArtistRepository<>));
-        services.AddScoped(typeof(ITrackRepository<>), typeof(TrackRepository<>));
+        services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
 
         services.AddTransient<IArtistService, ArtistService>();
         services.AddTransient<IAuthService, AuthService>();

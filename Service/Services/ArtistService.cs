@@ -6,9 +6,9 @@ namespace Service.Services
 {
     public class ArtistService : IArtistService
     {
-        private readonly IArtistRepository<Artist> _artistRepository;
+        private readonly IBaseRepository<Artist> _artistRepository;
 
-        public ArtistService(IArtistRepository<Artist> artistRepository)
+        public ArtistService(IBaseRepository<Artist> artistRepository)
         {
             _artistRepository = artistRepository;
         }

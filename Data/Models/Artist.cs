@@ -1,7 +1,5 @@
 ﻿namespace Data.Models;
 
-public class Artist
+public class Artist : BaseEntity
 {
-    public int Id { get; set; }
-    public string Name { get; set; }
 }
