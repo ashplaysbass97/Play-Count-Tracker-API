@@ -16,14 +16,9 @@ public static class AuthenticationExtensions
 {
     public static IServiceCollection AddJwtBearerAuthentication(this IServiceCollection services, IConfiguration configuration)
     {
-        services.AddIdentity<ApplicationUser, IdentityRole>()
-            .AddEntityFrameworkStores<ApplicationDbContext>();
+        services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>();
 
-        services.AddAuthentication(options =>
-        {
-            options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-            options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-        }).AddJwtBearer(options =>
+        services.AddAuthentication().AddJwtBearer(options =>
         {
             options.SaveToken = true;
             options.TokenValidationParameters = new TokenValidationParameters
@@ -40,6 +35,7 @@ public static class AuthenticationExtensions
 
         services.AddAuthorization(options =>
         {
+            // Require authentication by default
             options.FallbackPolicy = new AuthorizationPolicyBuilder()
                 .AddAuthenticationSchemes(JwtBearerDefaults.AuthenticationScheme)
                 .RequireAuthenticatedUser()

@@ -22,7 +22,7 @@ namespace Service.Services
             {
                 return new AuthResult()
                 {
-                    Errors = new List<string>() { "Invalid email or password" }
+                    Errors = new List<string>() { "Invalid username or password" }
                 };
             }
 
@@ -38,7 +38,7 @@ namespace Service.Services
 
             return new AuthResult()
             {
-                Errors = new List<string>() { "Invalid email or password" }
+                Errors = new List<string>() { "Invalid username or password" }
             };
         }
 
