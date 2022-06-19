@@ -25,7 +25,7 @@ namespace Repository.Repositories
         {
             if (entity == null)
             {
-                throw new ArgumentNullException("entity");
+                throw new ArgumentNullException("Entity not found");
             }
 
             entities.Add(entity);
@@ -36,7 +36,7 @@ namespace Repository.Repositories
         {
             if (entity == null)
             {
-                throw new ArgumentNullException("entity");
+                throw new ArgumentNullException("Entity not found");
             }
 
             entities.Update(entity);
@@ -47,7 +47,7 @@ namespace Repository.Repositories
         {
             if (entity == null)
             {
-                throw new ArgumentNullException("entity");
+                throw new ArgumentNullException("Entity not found");
             }
 
             entities.Remove(entity);
